@@ -1,0 +1,270 @@
+﻿@charset "utf-8";
+
+/* 基本レイアウト ここから↓ */
+@import url(common.css);
+
+body {
+	background-color: #fffaf3;
+	color: #005931;
+}
+header, nav, #breadcrumb,footer {
+	/*width: 840px;*/
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+#contents{
+	width: 440px;
+	margin: 0 auto;
+}
+
+/*******************************************************************/
+
+header ul {
+	list-style-type: none;
+	/*margin: 0 0 20px 0;*/
+	padding-left: 0;
+	overflow: hidden;
+}
+header ul li {
+	/*width: 165px;*/
+	/*width: auto;*/
+	float: left;
+}
+header ul li a {
+	display: block;
+	/*height: 0;*/
+	/*padding-top: 165px;*/
+	overflow: hidden;
+}
+/*
+header ul li#nav_logo a {
+	background-image: url("../image/logo_03.png");
+}
+header ul li#nav_about a {
+	background-image: url("../image/about_03.png");
+}
+header ul li#nav_menu a {
+	background-image: url("../image/menu_03.png");
+}
+header ul li#nav_access a {
+	background-image: url("../image/access_03.png");
+}
+header ul li#nav_contact a {
+	background-image: url("../image/inquiry_03.png");
+}
+header ul li#nav_sns a {
+	background-image: url("../image/insta.png");
+}
+
+.l-header_social img {
+    max-width: 100%;
+}
+*/
+#nav_about, #nav_menu, #nav_access, #nav_contact  {
+    position: relative;
+    top: 27px;
+	margin-right: 100px;
+}
+
+#nav_sns {
+    position: relative;
+    top: 18px;
+    left: 10px;
+	margin-right: 100px;
+}
+
+img {
+    width: auto;
+    height: auto;
+    vertical-align: bottom;
+}
+#nav_logo {
+    width: 710px;
+}
+
+#nav_logo img{
+    width: 330px;
+}
+
+#nav_sns {
+    /*
+	display: flex;
+    flex-wrap: wrap;
+	*/
+    width: 70px;
+}
+
+#nav_sns img{
+    margin: 0 auto;
+}
+
+#graphic {
+    margin: 0 15% 0 17%;
+    width: 80%;
+}
+
+#graphic img {
+    width: 80%;
+	text-align: right;
+}
+/*********************************************************************:/
+
+/*
+*/
+
+#main {
+	/*width: 570px;*/
+	width: auto;
+	float: left;
+}
+#news{
+	text-align: center;
+}
+
+#b{
+	text-align: center;
+}
+.reco{
+	text-align: center;
+
+}
+#c{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#d {
+	text-align: center;
+	margin: 100px 0 30px 0;
+}
+.box_css{
+
+	width:500px;  
+	border-radius: 10px;
+	padding: 16px 22px;
+	color: #fffaf3;
+	margin: 2em;
+ 	border: solid 3px;
+	text-align:  center; 
+	background-color: #005931;
+	margin-left: auto;
+	margin-right: auto;
+}
+.test1{
+	font-weight: bolder;
+}
+/*------------------------------------*/
+.content {
+  margin: 0 0 0 0; 
+  width: 100%;  
+  position: relative;
+}
+
+.tab-contents .swiper-slide {
+  
+  width: 40%;   
+  height: 20%; 
+}
+
+
+
+.tab-contents .swiper-slide img {
+  width: 100%;  
+  height: 50%;
+  object-fit: cover;
+  vertical-align: baseline;
+}
+
+.swiper-pagination {
+  width: 20px;
+  top: 108%;
+  text-align: left;
+  text-indent: 3.5%;
+  margin: 0 0 0 3%;
+}
+
+.swiper-button-prev {
+  top: 110%;
+  height: 10%;
+  width: 10%;
+}
+
+.swiper-button-next {
+  top: 110%;
+  height: 10%;
+  width: 10%;
+}
+
+
+.swiper-button-next {
+   left: 9%;
+}
+
+
+.swiper-button-prev {
+  left:0%;
+}
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 50px;
+  margin: auto;
+  width: 50px;
+
+}
+/* 前への矢印カスタマイズ */
+.swiper-button-prev::after {
+  background-image: url(../image/left_03.png);
+}
+/* 次への矢印カスタマイズ */
+.swiper-button-next::after {
+  background-image: url(../image/right_03.png);
+}
+/* 画像サイズ調整 */
+.swiper-slide img {
+  height: auto;
+  width: 100%;
+}
+
+/*------------------------------------*/
+footer{
+	padding-top: 70px;
+}
+
+/* トップページ ここから↓ */
+#news ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+#news ul li {
+	padding: 20px 0 20px 175px;
+	border-bottom: 1px dotted #6c5f45;
+	color: #342300;
+	text-indent: -175px;
+}
+/* トップページ ここまで↑ */
+
+/* アクセスページここから↓ */
+.access-map{
+	text-align: center;
+	background-position: center;
+}
+/* アクセスページここまで↑ */
+
+/* 「お問い合わせ」ページ ここから↓ */
+input[type="text"] {
+	width: 200px;
+}
+input[type="email"] {
+	width: 300px;
+}
+
+.access-news{
+	text-align: center;
+}
+/* 「お問い合わせ」ページ ここまで↑ */
